@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "265132559663",
+    "firebase_url": "https://translator-and-language-detect.firebaseio.com",
+    "project_id": "translator-and-language-detect",
+    "storage_bucket": "translator-and-language-detect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265132559663:android:3b2068d7ca66b700f1a5da",
+        "android_client_info": {
+          "package_name": "com.nisith.translatorandlanguagedetection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265132559663-vm3a889ousv4kuqb2ipimue5v6qsfm2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN7R43N9wliLwHWMHZkdK-t9W5duLZAno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265132559663-vm3a889ousv4kuqb2ipimue5v6qsfm2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LanguageDetectionActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_text"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:ckFlash="on"
+        app:ckPinchToZoom="true"
+        app:ckFacing="back"
+        app:ckJpegQuality="@integer/google_play_services_version"
+        app:ckZoom="@integer/google_play_services_version"
+        />
+
+    <ImageView
+        android:id="@+id/gallery_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_gallery"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:padding="16dp"
+        android:textSize="16sp"
+        />
+
+
+    <ImageView
+        android:id="@+id/write_image_view_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/gallery_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_edit" />
+
+
+    <ImageView
+        android:id="@+id/camera_image_view_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/gallery_image_view"
+        android:layout_toStartOf="@+id/write_image_view_icon"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_camera" />
+
+    <ImageView
+        android:id="@+id/gallery_image_view_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_gallery"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/gallery_image_view"
+        android:layout_toEndOf="@+id/write_image_view_icon"
+        />
+
+
+
+
+
+    <Button
+        android:id="@+id/detect_language_button"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_style"
+        android:text="Detect Language"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gallery_image_view_icon"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_below="@+id/detect_language_button"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        />
+
+
+</RelativeLayout>
